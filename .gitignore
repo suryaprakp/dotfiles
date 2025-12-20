@@ -1,0 +1,28 @@
+# Chezmoi-specific ignores
+.chezmoi.toml.tmp
+.chezmoi.verification
+
+# OS-specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor-specific
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Sensitive files (if you accidentally add them)
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*.env
+.env.local
+

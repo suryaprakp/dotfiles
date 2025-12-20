@@ -1,0 +1,9 @@
+# Chezmoi configuration file
+# This file is managed by chezmoi itself, so changes here will be tracked
+
+[data]
+    # Add any custom data here that you want to use in templates
+    # Example:
+    # email = "suryaprakash227@gmail.com"
+    # name = "suryaprakp"
+
