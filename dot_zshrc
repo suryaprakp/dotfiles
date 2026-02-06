@@ -148,3 +148,6 @@ alias ll="ls -la"
 alias la="ls -A"
 
 eval "$(fnm env --use-on-cd --shell zsh)"
+
+# Use bitwarden SSH agent
+export SSH_AUTH_SOCK=/Users/avasurya/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
