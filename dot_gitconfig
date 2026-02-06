@@ -1,3 +1,10 @@
 [user]
 	name = suryaprakp
 	email = suryaprakash227@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOf2asBRD0wVZEAenq374rFUBqnlQCKHCPGdKksNkaLV suryaprakash227@gmail.com
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[gpg "ssh"]
+	allowedSignersFile = /Users/avasurya/.ssh/allowed_signers
