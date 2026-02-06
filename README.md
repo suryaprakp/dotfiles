@@ -95,3 +95,38 @@ chezmoi git push
 - For private repos, ensure your SSH keys or GitHub credentials are configured
 - You can check your current remote URL with: `chezmoi git remote -v`
 
+
+
+## Prerequisites: Oh-My-Zsh and Plugins
+
+Before applying chezmoi, you must install Oh-My-Zsh and the required plugins.
+
+### Install Oh-My-Zsh
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+### Install Required Plugins
+
+#### Install zsh-autosuggestions and zsh-syntax-highlighting
+
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+#### Install Spaceship Prompt Theme
+
+```bash
+git clone https://github.com/spaceship-prompt/spaceship-prompt.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt --depth=1
+ln -s ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship.zsh-theme
+```
+
+### Installation Order
+
+1. Install Oh-My-Zsh first
+2. Install all plugins listed above
+3. Then apply chezmoi with `chezmoi apply`
+
+This ensures your shell environment is properly configured before chezmoi manages your dotfiles.
